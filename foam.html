@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verge Blogs - Subscribe</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f8f9fa; font-family: Arial, sans-serif;">
+
+    <!-- Header -->
+    <header style="background-color: #2c3e50; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #3498db, #2ecc71); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 24px; color: white;">
+                VB
+            </div>
+            <h1 style="margin: 0; font-size: 28px;">Verge Blogs</h1>
+        </div>
+        <nav>
+            <a href="home.html" style="color: #ecf0f1; text-decoration: none; margin: 0 15px;">Home</a>
+            <a href="table.html" style="color: #ecf0f1; text-decoration: none; margin: 0 15px;">Statistics</a>
+            <a href="form.html" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">Subscribe</a>
+            <a href="about.html" style="color: #ecf0f1; text-decoration: none; margin: 0 15px;">About Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
+        
+        <h1 style="color: #2c3e50; text-align: center; margin-bottom: 0.5rem;">Subscribe to Our Newsletter</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 2rem;">Get daily updates on our latest blog posts</p>
+
+        <!-- Subscription Form -->
+        <div style="background: white; border-radius: 10px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            
+            <form id="subscribeForm" style="max-width: 600px; margin: 0 auto;">
+                
+                <!-- Name Field -->
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="name" style="display: block; margin-bottom: 8px; font-weight: bold; color: #2c3e50;">
+                        Full Name <span style="color: #e74c3c;">*</span>
+                    </label>
+                    <input type="text" id="name" name="name" required 
+                           style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 5px; font-size: 16px;"
+                           placeholder="Enter your full name">
+                </div>
+                
+                <!-- Email Field -->
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="email" style="display: block; margin-bottom: 8px; font-weight: bold; color: #2c3e50;">
+                        Email Address <span style="color: #e74c3c;">*</span>
+                    </label>
+                    <input type="email" id="email" name="email" required 
+                           style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 5px; font-size: 16px;"
+                           placeholder="Enter your email">
+                </div>
+                
+                <!-- Category Preference (Radio Buttons) -->
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="font-weight: bold; color: #2c3e50; margin-bottom: 10px;">Preferred Blog Categories:</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                        <label style="display: flex; align-items: center; gap: 8px;">
+                            <input type="radio" name="category" value="sports" checked>
+                            <span>Sports</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px;">
+                            <input type="radio" name="category" value="news">
+                            <span>News</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px;">
+                            <input type="radio" name="category" value="health">
+                            <span>Health</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px;">
+                            <input type="radio" name="category" value="technology">
+                            <span>Technology</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px;">
+                            <input type="radio" name="category" value="all">
+                            <span>All Categories</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Subscription Type (Dropdown) -->
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="subscription" style="display: block; margin-bottom: 8px; font-weight: bold; color: #2c3e50;">
+                        Subscription Type
+                    </label>
+                    <select id="subscription" name="subscription" 
+                            style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 5px; font-size: 16px;">
+                        <option value="daily">Daily Updates</option>
+                        <option value="weekly" selected>Weekly Digest</option>
+                        <option value="monthly">Monthly Newsletter</option>
+                    </select>
+                </div>
+                
+                <!-- Terms Agreement (Checkbox) -->
+                <div style="margin-bottom: 2rem;">
+                    <label style="display: flex; align-items: flex-start; gap: 10px;">
+                        <input type="checkbox" required style="margin-top: 3px;">
+                        <span>I agree to receive email updates from Verge Blogs and accept the <a href="#" style="color: #3498db;">Privacy Policy</a></span>
+                    </label>
+                </div>
+                
+                <!-- Submit Button -->
+                <button type="submit" 
+                        style="background: #3498db; color: white; border: none; padding: 15px 30px; font-size: 18px; border-radius: 5px; cursor: pointer; width: 100%; font-weight: bold;">
+                    Subscribe Now
+                </button>
+                
+                <!-- Reset Button -->
+                <button type="reset" 
+                        style="background: #e74c3c; color: white; border: none; padding: 15px 30px; font-size: 18px; border-radius: 5px; cursor: pointer; width: 100%; margin-top: 15px; font-weight: bold;">
+                    Clear Form
+                </button>
+                
+            </form>
+            
+            <!-- Form Submission Message -->
+            <div id="message" style="display: none; margin-top: 1.5rem; padding: 1rem; background-color: #d4edda; color: #155724; border-radius: 5px; text-align: center;">
+                <p style="margin: 0;">Thank you for subscribing! You'll receive our next update soon.</p>
+            </div>
+
+        </div>
+
+        <!-- Form Instructions -->
+        <div style="background: white; border-radius: 10px; padding: 1.5rem; margin-top: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <h3 style="color: #2c3e50; margin-top: 0;">Why Subscribe?</h3>
+            <ul style="color: #555; padding-left: 20px;">
+                <li>Get notified about new blog posts</li>
+                <li>Exclusive content for subscribers</li>
+                <li>Weekly digest of top stories</li>
+                <li>Special offers and updates</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #2c3e50; color: white; text-align: center; padding: 1.5rem; margin-top: 3rem;">
+        <p style="margin: 0.5rem 0;">© 2025 Verge Blogs. All rights reserved.</p>
+        <p style="margin: 0.5rem 0; font-size: 14px; opacity: 0.8;">Form Page - Newsletter Subscription</p>
+    </footer>
+
+    <!-- Simple JavaScript for Form Submission -->
+    <script>
+        document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            
+            // Show success message
+            document.getElementById('message').style.display = 'block';
+            
+            // Reset form after 3 seconds
+            setTimeout(function() {
+                document.getElementById('subscribeForm').reset();
+                document.getElementById('message').style.display = 'none';
+            }, 3000);
+        });
+    </script>
+
+</body>
+</html>
